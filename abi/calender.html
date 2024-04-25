@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+           <!--profile image & text-->
+           <div class="profile">
+
+           
+
+          
+
+        </div>
+
+            <div class="vc">          
+            <h3>Dashboard</h3>
+            </div>
+
+            <!--menu item-->
+
+            <ul class="side-nav">
+                   <!-- <li>
+                    <a href="">
+
+                        <span class="item">How its works</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="home.html">
+                        <!-- <span class="icon"><i class="fas fa-desktop"></i></span> -->
+                        <span class="item">Transaction</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="calender.html" class="active">
+                        <!-- <span class="icon"><i class="fas fa-user-friends"></i></span> -->
+                        <span class="item">Calender</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="notify.html" >
+                        <!-- <span class="icon"><i class="fas fa-user-friends"></i></span> -->
+                        <span class="item">Notification</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="voice_custom.html">
+                        <!-- <span class="icon"><i class="fas fa-user-friends"></i></span> -->
+                        <span class="item">Support</span>
+                    </a>
+                </li>
+              
+                <li class="down-setting">
+                    <a href="setting.html">
+                        <!-- <span class="icon"><i class="fas fa-cog"></i></span> -->
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+            
+            </ul>
+
+
+
+        </div>
+      
+      
+        <div class="section">
+         
+           
+            <!-- <div class="nav">
+                <h1>Welcome to Isaft</h1>
+                <div class="top_navbar">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div> -->
+           
+
+       
+
+            <!-- isaft -->
+
+            <div class="isaft">
+
+              
+
+
+             
+<div class="calendar" id="calendar"></div>
+
+<div class="payment-modal" id="paymentModal">
+    <h2>Add Payment Reminder</h2>
+    <label for="paymentDate">Date:</label>
+    <input type="date" id="paymentDate">
+    <label for="paymentAmount">Amount:</label>
+    <input type="number" id="paymentAmount">
+    <label for="paymentRecipient">Recipient:</label>
+    <input type="text" id="paymentRecipient">
+    <button id="savePayment">Save</button>
+</div>
+
+
+            <!-- approve -->
+
+            <!-- <div class="proposal">
+                <button>Payment List</button>
+                <button>Clients</button>
+                <button>Paid</button>
+
+                
+                    <button class="click">Create</button>
+        
+              </div>  -->
+
+        
+
+            <!-- table -->
+
+            <div class="pay_box">
+                <table class="responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Invoice</th>
+                            <th>Client Name</th>
+                            <th>Status</th>
+                            <th>Deadline</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="info">
+                            <td>#1</td>
+                            <td>Roy</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>23000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#2</td>
+                            <td>Abi</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>21000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#3</td>
+                            <td>Monesh</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#4</td>
+                            <td>Joe</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#5</td>
+                            <td>Binesh</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>35000</td>
+                        </tr>
+                        
+                        <tr class="info">
+                            <td>#6</td>
+                            <td>Jack</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#7</td>
+                            <td>Ram</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#8</td>
+                            <td>Hari</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>2900</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#9</td>
+                            <td>Shek</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>37000</td>
+                        </tr>
+                        <tr class="info">
+                            <td>#10</td>
+                            <td>Vinesh</td>
+                            <td>waiting delivery</td>
+                            <td>24.07.2024</td>
+                            <td>3000</td>
+                        </tr>
+                      
+                       
+                    </tbody>
+                </table>
+            </div>
+            
+         
+            </section>
+
+           </div>
+        
+        </div>
+
+      
+   
+  <script>
+  
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const calendarContainer = document.getElementById('calendar');
+    const paymentModal = document.getElementById('paymentModal');
+    const paymentDateInput = document.getElementById('paymentDate');
+    const paymentAmountInput = document.getElementById('paymentAmount');
+    const paymentRecipientInput = document.getElementById('paymentRecipient');
+    const savePaymentButton = document.getElementById('savePayment');
+
+    // Generate calendar days
+    const daysInMonth = 31; // You can adjust this based on the month
+    const currentYear = new Date().getFullYear();
+    for (let i = 1; i <= daysInMonth; i++) {
+        const day = document.createElement('div');
+        day.classList.add('day');
+        day.textContent = i;
+        day.addEventListener('click', () => openPaymentModal(i));
+        calendarContainer.appendChild(day);
+    }
+
+    const openPaymentModal = (date) => {
+        paymentDateInput.value = ''; // Clear input fields
+        paymentAmountInput.value = '';
+        paymentRecipientInput.value = '';
+
+        paymentDateInput.dataset.date = `${currentYear}-${date}`; // Store the date as a data attribute
+        paymentModal.style.display = 'block';
+    };
+
+    savePaymentButton.addEventListener('click', () => {
+        const date = paymentDateInput.dataset.date;
+        const amount = paymentAmountInput.value;
+        const recipient = paymentRecipientInput.value;
+
+        if (date && amount && recipient) {
+            alert(`Payment reminder saved for ${date} to pay $${amount} to ${recipient}`);
+            paymentModal.style.display = 'none';
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+});
+
+
+  </script>
+</body>
+</html>

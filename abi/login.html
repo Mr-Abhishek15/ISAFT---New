@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISAFT</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-600 bg-opacity-72">
+
+<div class="navbar flex items-center justify-between px-4 py-2 bg-green-600 ">
+  <div class="logo flex items-center">
+    <img src="logo.jpg" class="w-16 h-16 rounded-full" alt="Logo">
+    <h1 class="text-white ml-2 text-3xl font-semibold">ISAFT</h1>
+  </div>
+  <div class="navbar_btn hidden md:flex items-center space-x-4">
+    <!-- <a href="#" class="text-white text-lg hover:text-green-900">HOME</a> -->
+    <a href="#" class="text-white text-lg hover:text-green-900">HOW IT WORKS</a>
+    <!-- <a href="#" class="text-white text-lg hover:text-green-900">FINANCE TRACKING</a>
+    <a href="#" class="text-white text-lg hover:text-green-900">CONTACT</a> -->
+    <button onclick="signIn()" class="px-4 py-2  bg-green-900 text-white hover:bg-white  hover:text-green-700 rounded-lg text-lg">LOGIN</button>
+  </div>
+  <a href="javascript:void(0);" class="icon md:hidden text-white" onclick="toggleNavbar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="budget flex justify-center items-center text-white mt-20 relative top-20">
+    <div class="content_budget text-center">
+        <h1 class="text-6xl font-bold">Budget with a why</h1>
+        <p class="text-3xl mt-8">Speed, save and give toward what's important in life</p>
+        <div class="create_isaft mt-8">
+            <div class="btn_create">
+              <a href="home.html"> <button class="px-8 py-3 bg-white  hover:bg-white hover:bg-green-900 hover:text-white text-green-800 rounded-full text-lg">CREATE YOUR ISAFT</button></a> 
+            </div>
+            <!-- <div class="android mt-8 flex justify-center items-center">
+                <p class="text-2xl flex items-center">Finance tracking app available on
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsK9wHGiuVRCuIpBVb3wOx9mwRq1pBj2PO5Olbpjag9g&s" alt="" class="w-10 h-10 mx-2 inline">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsK9wHGiuVRCuIpBVb3wOx9mwRq1pBj2PO5Olbpjag9g&s" alt="" class="w-10 h-10 mx-2 inline">
+                </p>
+                
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleNavbar() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+function signIn() {
+  // Add your sign-in functionality here
+}
+</script>
+
+</body>
+</html>
